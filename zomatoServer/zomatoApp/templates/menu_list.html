@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu List</title>
+</head>
+<body>
+    <h1>Menu List</h1>
+    <table>
+        <tr>
+            <th>DishID</th>
+            <th>DishName</th>
+            <th>Price</th>
+            <th>DishAvailability</th>
+        </tr>
+        {% for dish in menu_data %}
+           <tr>
+            <td>{{ dish.dishId }}</td>
+            <td>{{dish.dishName}}</td>
+            <td>{{ dish.dishPrice }}</td>
+            <td>{{dish.dishAvailability}}</td>
+           </tr>
+        {% endfor %}
+    </table>
+    <a href="/menu/add">Add Dish</a><br>
+    <a href="/menu/remove/">Remove Dish from Menu</a><br>
+    <a href="/menu/update/">Update Dish Availability</a><br>
+    <a href="/order">All Orders</a><br>
+    <a href="/order/takeorder">New Order</a><br>
+    <a href="/order/UpdateStatus/">Update Order Status</a><br>
+    <a href="/order/filter/">Filter Order by Status</a><br>
+    
+</body>
+</html>

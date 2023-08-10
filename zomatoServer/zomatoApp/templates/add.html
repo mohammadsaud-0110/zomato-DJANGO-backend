@@ -1,0 +1,43 @@
+<br><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dish</title>
+</head>
+<body>
+    <h2>Add Dish</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="dishId">dishId:</label>
+        <input type="text" name="dishId"><br>
+        <label for="dishName">dishName:</label>
+        <input type="text" name="dishName"><br>
+        <label for="dishPrice">dishPrice:</label>
+        <input type="number" name="dishPrice"><br>
+        <label for="dishAvailability">dishAvailability:</label>
+        <input type="text" name="dishAvailability"><br>
+        <input type="submit" value="Add Dish">
+    </form>
+    <a href="/">Menu</a><br>
+    <a href="/menu/remove/">Remove Dish from Menu</a><br>
+    <a href="/menu/update/">Update Dish Availability</a><br>
+    <a href="/order">All Orders</a><br>
+    <a href="/order/takeorder">New Order</a><br>
+    <a href="/order/UpdateStatus/">Update Order Status</a><br>
+    <a href="/order/filter/">Filter Order by Status</a><br>
+    <!-- <a href="/create">Create Menu</a>
+    <a href="/update">Update</a>
+    <a href="/delete">Delete</a>
+    <a href="/order">Order</a>
+    <a href="/view">View order</a> -->
+    <!-- path('', views.menu_list, name='menu_list'),
+    path('menu/add', views.add_dish, name='add_dish'),
+    path('menu/remove/<str:dishId>/', views.remove_dish, name='remove_dish'),
+    path('menu/update/<str:dishId>/', views.update_dish, name='update_dish'),
+    path('order/', views.order_list, name='order_list'),
+    path('order/takeorder', views.take_order, name='take_order'),
+    path('order/UpdateStatus/<str:OrderId>', views.update_order_status, name='update_order_status'),
+    path('order/filter/<str:status>', views.filter , name='filter') -->
+</body>
+</html>

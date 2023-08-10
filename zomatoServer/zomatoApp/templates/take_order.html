@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Order</title>
+</head>
+<body>
+    <h2>Order Dish</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="CustomerName">CustomerName:</label>
+        <input type="text" name="CustomerName"><br>
+        <label for="dishId">dishId:</label>
+        <input type="text" name="dishId"><br>
+        <input type="submit" value="Place Order">
+    </form>
+    {{item1}}
+    <br>
+    <br>
+    <a href="/">Menu</a><br>
+    <a href="/menu/add">Add Dish</a><br>
+    <a href="/menu/remove/">Remove Dish from Menu</a><br>
+    <a href="/menu/update/">Update Dish Availability</a><br>
+    <a href="/order">All Orders</a><br>
+    <!-- <a href="/order/takeorder">New Order</a> -->
+    <a href="/order/UpdateStatus/">Update Order Status</a><br>
+    <a href="/order/filter/">Filter Order by Status</a><br>
+</body>
+</html>

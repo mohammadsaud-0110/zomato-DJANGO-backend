@@ -1,0 +1,16 @@
+[
+    {
+        "OrderId": "1",
+        "CustomerName": "saud",
+        "dishName": "Samosa",
+        "Price": 30.0,
+        "Status": "Ready for PickUp"
+    },
+    {
+        "OrderId": "2",
+        "CustomerName": "xyz",
+        "dishName": "Tea",
+        "Price": 15.0,
+        "Status": "Received"
+    }
+]

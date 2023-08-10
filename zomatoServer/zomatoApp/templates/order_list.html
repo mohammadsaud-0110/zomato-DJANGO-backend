@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order </title>
+</head>
+<body>
+    <h1>Order List</h1>
+    <table>
+        <tr>
+            <th>OrderID</th>
+            <th>CustomerName</th>
+            <th>DishName</th>
+            <th>Price</th>
+            <th>OrderStatus</th>
+        </tr>
+        {% for dish in order_data %}
+           <tr>
+            <td>{{ dish.OrderId }}</td>
+            <td>{{dish.CustomerName}}</td>
+            <td>{{dish.dishName}}</td>
+            <td>{{ dish.Price }}</td>
+            <td>{{dish.Status}}</td>
+           </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Menu</a><br>
+    <a href="/menu/add">Add Dish</a><br>
+    <a href="/menu/remove/">Remove Dish from Menu</a><br>
+    <a href="/menu/update/">Update Dish Availability</a><br>
+    <!-- <a href="/order">All Orders</a><br> -->
+    <a href="/order/takeorder">New Order</a><br>
+    <a href="/order/UpdateStatus/">Update Order Status</a><br>
+    <a href="/order/filter/">Filter Order by Status</a><br>
+</body>
+</html>

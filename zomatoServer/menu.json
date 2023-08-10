@@ -1,0 +1,26 @@
+[
+    {
+        "dishId": "1",
+        "dishName": "Samosa",
+        "dishPrice": 30.0,
+        "dishAvailability": "yes"
+    },
+    {
+        "dishId": "2",
+        "dishName": "Tea",
+        "dishPrice": 15.0,
+        "dishAvailability": "yes"
+    },
+    {
+        "dishId": "3",
+        "dishName": "pasta",
+        "dishPrice": 70.0,
+        "dishAvailability": "no"
+    },
+    {
+        "dishId": "5",
+        "dishName": "Mango",
+        "dishPrice": 50.0,
+        "dishAvailability": "yes"
+    }
+]
